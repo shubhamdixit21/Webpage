@@ -1,0 +1,304 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+    font-family: 'Tiro Bangla', serif;
+}
+
+.BgColour{	
+	background-color: white;
+	border-bottom: 1px solid lightgray;
+	transition: all 1s;
+}
+
+.header.BgColour .nav ul li a{
+	color: black;
+}
+
+.header.BgColour .logo a{
+	color: black;
+}
+
+.container{
+	max-width: 1440px;
+	width: 100%;
+	margin: auto;
+	padding: 0 20px;
+}
+.header{
+	position: fixed;
+	z-index: 1;
+}
+.header_section .header{
+	display: flex;
+	justify-content: space-between;
+	height: 70px;
+	width: 100%;
+	align-items: center;
+}
+.header .logo a{
+	font-size: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color:  #fff;
+}
+.header .logo a:hover{
+	color: darkgoldenrod;
+}
+
+.header .nav{
+	max-width: 600px;
+	width: 100%;
+	padding-right: 40px;
+}
+.header .nav ul{
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	letter-spacing: 1px;
+}
+
+.header .nav ul li a{
+	text-decoration: none;
+	text-transform: capitalize;
+	color: white;
+	font-size: 20px;
+}
+.header .nav ul li a:hover{
+	color: darkgoldenrod;
+}
+
+/*header ends*/
+
+.banner_section{
+	position: relative;
+}
+
+
+.banner_section .content{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0	;
+	background: rgba(0,0,0,0.5);
+}
+
+.banner_section .banner_img img{
+	width: 100%;	
+}
+
+.banner_section .content .inner_content{
+	max-width: 40%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding-top: 200px;
+}
+
+.banner_section .inner_content h1{
+	font-size: 50px;
+	margin-bottom: 15px;
+	color: #fff;
+}
+
+.banner_section .inner_content p{
+	margin-bottom: 15px;
+	font-size: 20px;
+	color: #fff;
+}
+
+.banner_section .inner_content button{
+	cursor: pointer;
+	font-size: 18px;
+	max-width: 120px;
+	width: 100%;
+	background-color: #fff;
+	color: #000;
+	border: none;
+	font-weight:600;
+	padding: 10px;
+}
+
+.banner_section .inner_content button:hover{
+	color: #fff;
+	background: transparent;
+}
+
+.banner_section .inner_content{
+	padding-top: 120px;
+}
+
+
+/*banner section ends*/
+
+
+.second_section .content{
+	padding: 80px 0;
+	margin: 0 300px;
+	text-align: center;
+}
+
+.second_section .content h2{
+	margin-bottom: 10px;
+	font-size: 25px;
+}
+
+.second_section .content p{
+	font-size: 20px;
+}
+
+.box_section{
+	display: flex;
+	justify-content: space-between;
+}
+
+.box_section .box_list{
+	width: 32%;
+	padding: 20px;
+	text-align: center;
+}
+
+.box_section .box_list h3{
+	text-transform: capitalize;
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: black;
+}
+
+.box_section .box_list p{
+	font-size: 16px;
+	line-height: 1.5;
+	color: black;
+}
+
+.border_box .fa-facebook, .border_box  .fa-instagram, .border_box  .fa-youtube-play{
+	border: 2px solid yellow;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin: 0 180px;
+	background: yellow;
+}
+
+.border_box i{
+	font-size: 23px;
+}
+
+/* Second Sections Ends */
+
+/*Design Section Starts*/
+
+.design{
+	margin: 80px auto;
+	padding: 0 20px;
+}
+
+.fdesign{																												
+	display: flex;
+	max-width: 600px;
+	width: 100%;
+	margin: 80px auto;
+}
+
+.fdesign img{
+	max-width: 600px;
+	width: 100%;
+}
+
+.fdesign .conntent{
+	display: flex;
+	flex-direction: column;
+	padding-left: 20px;
+}
+
+.fdesign .conntent h2{
+	font-size: 25px;
+}
+
+.fdesign .conntent p{
+	font-size: 20px;
+}
+
+.fdesign .conntent button{
+	cursor: pointer;
+	font-size: 18px;
+	max-width: 120px;
+	width: 100%;
+	color: black;
+	border: none;
+	font-weight:600;
+	padding: 10px;
+}
+
+.fdesign .conntent button:hover{
+	color: #fff;
+	background: black	;
+}
+
+.sdesign{
+	display: flex;
+	max-width: 600px;
+	width: 100%;
+	margin: 80px auto;
+}
+
+.sdesign .conntent{
+	display: flex;
+	flex-direction: column;	
+}
+ .design .sdesign{
+
+ }
+
+.sdesign img{
+	width: 100%;
+	max-width: 600px;
+}
+
+.sdesign .conntent h2{
+	font-size: 25px;
+}
+
+.sdesign .conntent p{
+	font-size: 20px;
+}
+
+.sdesign .conntent button{
+	cursor: pointer;
+	font-size: 18px;
+	max-width: 120px;
+	width: 100%;
+	color: black;
+	border: none;
+	font-weight:600;
+	padding: 10px;
+}
+
+.sdesign .conntent button:hover{
+	color: #fff;
+	background: black;
+}
+
+
+
+/*Design Section Ends*/
+
+/*Feedback Section Starts*/
+
+.feedback_section{
+	padding: 80px 0;
+	margin: 0 300px;
+	text-align: center;
+}
+
+.feedback_section h2{
+	font-size: 25px;
+	font-weight:600;
+	margin-bottom: 10px;
+}
+
+.feedback_section p{
+	font-size: 20px;
+}
