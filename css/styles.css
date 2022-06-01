@@ -2,8 +2,10 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: 'Roboto', sans-serif;
-    font-family: 'Tiro Bangla', serif;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
 }
 
 .BgColour{	
@@ -12,11 +14,11 @@
 	transition: all 1s;
 }
 
-.header.BgColour .nav ul li a{
+.header_section.BgColour .nav ul li a{
 	color: black;
 }
 
-.header.BgColour .logo a{
+.header_section.BgColour .logo a{
 	color: black;
 }
 
@@ -26,9 +28,12 @@
 	margin: auto;
 	padding: 0 20px;
 }
-.header{
+.header_section{
 	position: fixed;
-	z-index: 1;
+	z-index: 9;
+	width: 100%;
+	top: 0;
+	left: 0;
 }
 .header_section .header{
 	display: flex;
@@ -44,7 +49,7 @@
 	color:  #fff;
 }
 .header .logo a:hover{
-	color: darkgoldenrod;
+	color: #0b545c;
 }
 
 .header .nav{
@@ -66,7 +71,7 @@
 	font-size: 20px;
 }
 .header .nav ul li a:hover{
-	color: darkgoldenrod;
+	color: #0b545c;
 }
 
 /*header ends*/
@@ -86,57 +91,58 @@
 }
 
 .banner_section .banner_img img{
-	width: 100%;	
+	width: 100%;
+	display: block;	
 }
 
-.banner_section .content .inner_content{
-	max-width: 40%;
+.banner_section .content .container{
+	max-width: 700px;     /*1440px*/
 	width: 100%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
-	padding-top: 200px;
+	justify-content: center;
+	align-items: flex-start;
+	margin: 0 auto;
 }
 
-.banner_section .inner_content h1{
+.banner_section .content h1{
 	font-size: 50px;
 	margin-bottom: 15px;
 	color: #fff;
 }
 
-.banner_section .inner_content p{
+.banner_section .content p{
 	margin-bottom: 15px;
 	font-size: 20px;
 	color: #fff;
 }
 
-.banner_section .inner_content button{
+.banner_section .content button{
 	cursor: pointer;
 	font-size: 18px;
 	max-width: 120px;
 	width: 100%;
-	background-color: #fff;
-	color: #000;
+	background-color: #0b545c;
+	color: #fff;
 	border: none;
-	font-weight:600;
 	padding: 10px;
 }
 
-.banner_section .inner_content button:hover{
-	color: #fff;
-	background: transparent;
-}
-
-.banner_section .inner_content{
-	padding-top: 120px;
+.banner_section .content button:hover{
+	color: #000;
+	background: #fff;
 }
 
 
 /*banner section ends*/
 
-
+/*Second Section Starts*/
 .second_section .content{
 	padding: 80px 0;
-	margin: 0 300px;
+	max-width: 600px;
+	width: 100%;
+	margin: 0 auto;
 	text-align: center;
 }
 
@@ -163,7 +169,7 @@
 .box_section .box_list h3{
 	text-transform: capitalize;
 	font-size: 24px;
-	margin-bottom: 20px;
+	margin: 20px auto;
 	color: black;
 }
 
@@ -173,132 +179,109 @@
 	color: black;
 }
 
-.border_box .fa-facebook, .border_box  .fa-instagram, .border_box  .fa-youtube-play{
+.border_box{
 	border: 2px solid yellow;
-	width: 30px;
-	height: 30px;
+	width: 80px;
+	height: 80px;
 	border-radius: 50%;
-	margin: 0 180px;
-	background: yellow;
+	max-width: 100px;
+	margin: 0 auto;
+	background-color: yellow;
 }
 
 .border_box i{
-	font-size: 23px;
+	font-size: 70px;
+	margin: auto;
 }
 
 /* Second Sections Ends */
 
 /*Design Section Starts*/
 
-.design{
-	margin: 80px auto;
-	padding: 0 20px;
+/*.design{
+	height: 1200px;
+	background-color: grey;
 }
 
-.fdesign{																												
+.design .container .fdesign{
+	
 	display: flex;
-	max-width: 600px;
-	width: 100%;
-	margin: 80px auto;
+	justify-content: center;
+	}
+
+.design .fdesign .img_box img{
+	display: block;
 }
 
-.fdesign img{
-	max-width: 600px;
-	width: 100%;
-}
+.design .fdesign .content{
 
-.fdesign .conntent{
-	display: flex;
-	flex-direction: column;
-	padding-left: 20px;
-}
-
-.fdesign .conntent h2{
-	font-size: 25px;
-}
-
-.fdesign .conntent p{
-	font-size: 20px;
-}
-
-.fdesign .conntent button{
-	cursor: pointer;
-	font-size: 18px;
-	max-width: 120px;
-	width: 100%;
-	color: black;
-	border: none;
-	font-weight:600;
-	padding: 10px;
-}
-
-.fdesign .conntent button:hover{
-	color: #fff;
-	background: black	;
-}
-
-.sdesign{
-	display: flex;
-	max-width: 600px;
-	width: 100%;
-	margin: 80px auto;
-}
-
-.sdesign .conntent{
-	display: flex;
-	flex-direction: column;	
-}
- .design .sdesign{
-
- }
-
-.sdesign img{
-	width: 100%;
-	max-width: 600px;
-}
-
-.sdesign .conntent h2{
-	font-size: 25px;
-}
-
-.sdesign .conntent p{
-	font-size: 20px;
-}
-
-.sdesign .conntent button{
-	cursor: pointer;
-	font-size: 18px;
-	max-width: 120px;
-	width: 100%;
-	color: black;
-	border: none;
-	font-weight:600;
-	padding: 10px;
-}
-
-.sdesign .conntent button:hover{
-	color: #fff;
-	background: black;
-}
-
-
-
+}*/
 /*Design Section Ends*/
 
 /*Feedback Section Starts*/
 
 .feedback_section{
 	padding: 80px 0;
-	margin: 0 300px;
+	max-width: 600px;
+	width: 100%;
+	margin: 0 auto;
 	text-align: center;
 }
 
-.feedback_section h2{
-	font-size: 25px;
-	font-weight:600;
-	margin-bottom: 10px;
+.feedback_section .user_image img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-bottom: 20px;
 }
 
 .feedback_section p{
 	font-size: 20px;
+}
+
+.feedback_section .user_data p{
+	margin-bottom: 20px;
+}
+
+/*Feedback Section Ends*/
+/*Customize Section Starts*/
+.customize{
+	position: relative;
+}
+
+
+.customize .content{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0	;
+	background: rgba(0,0,0,0.5);
+}
+
+.customize .banner_img img{
+	width: 100%;
+	display: block;	
+}
+
+.customize .content .container{
+	max-width: 1440px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	margin: 0 auto;
+}
+
+.customize .content h2{
+	font-size: 30px;
+	color: #fff;
+}
+
+.customize .content p{
+	margin-bottom: 15px;
+	font-size: 20px;
+	color: #fff;
 }
