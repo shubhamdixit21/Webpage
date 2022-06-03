@@ -8,6 +8,11 @@ body{
 	font-family: 'Montserrat', sans-serif;
 }
 
+p{
+	font-size: 18px;
+	line-height: 1.5;
+}
+
 .BgColour{	
 	background-color: white;
 	border-bottom: 1px solid lightgray;
@@ -35,11 +40,14 @@ body{
 	top: 0;
 	left: 0;
 }
+.header_section .container{
+	height: 70px;
+}
 .header_section .header{
 	display: flex;
 	justify-content: space-between;
-	height: 70px;
 	width: 100%;
+	height: 100%;
 	align-items: center;
 }
 .header .logo a{
@@ -116,8 +124,6 @@ body{
 
 .banner_section .content p{
 	margin-bottom: 15px;
-	font-size: 18px;
-	line-height: 1.5;
 	color: #fff;
 }
 
@@ -154,11 +160,6 @@ body{
 	font-size: 25px;
 }
 
-.second_section .content p{
-	font-size: 18px;
-	line-height: 1.5;
-}
-
 .box_section{
 	display: flex;
 	justify-content: space-between;
@@ -168,6 +169,7 @@ body{
 	width: 32%;
 	padding: 20px;
 	text-align: center;
+	margin-bottom: 50px;
 }
 
 .box_section .box_list h3{
@@ -177,13 +179,7 @@ body{
 	color: black;
 }
 
-.box_section .box_list p{
-	font-size: 18px;
-	line-height: 1.5;
-	color: black;
-}
-
-.border_box{
+.box_section .box_list .border_box{
 	border: 2px solid #0b545c;
 	width: 40px;
 	height: 40px;
@@ -193,7 +189,7 @@ body{
 	background-color: #0b545c;
 }
 
-.border_box i{
+.box_section .box_list .border_box i{
 	font-size: 30px;
 	margin: auto;
 }
@@ -203,29 +199,20 @@ body{
 /*Design Section Starts*/
 
 .design{
-	height: 1000px;
-	background: grey;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: lightgray;
 }
 
-.design .container .samediv{
-	height: 500px;
-	width: 100%;
+.design .samediv{
 	display: flex;
-	justify-content: space-between;
-	margin: 0 auto;
-	line-height: 1.5;
+	flex-direction: row;
 }
 
-.samediv .test{
-	width: 1400px;
-}
-
-.samediv .test img{
-	width: 100%;
-	padding: 20px;
+.container .test .image_box img{
 	display: block;
+	width: 100%;
 }
-
 /*Design Section Ends*/
 
 /*Feedback Section Starts*/
@@ -245,13 +232,10 @@ body{
 	margin-bottom: 20px;
 	object-fit: cover;
 }
-#post{
-	font-weight: 800;
+.post{
+	font-size: 20px;
+	font-weight: 700;
 	color: #0b545c;
-	line-height: 1.5;
-}
-.feedback_section p{
-	font-size: 18px;
 	line-height: 1.5;
 }
 
@@ -261,51 +245,114 @@ body{
 
 /*Feedback Section Ends*/
 /*Customize Section Starts*/
+
 .customize{
-	position: relative;
+	background: url('../images/banner3.jpg') no-repeat center;
+	padding: 100px 0;
 }
 
-.customize .banner_img img{
-	width: 100%;
-	display: block;
+.script{
+	font-size: 25px;
+	margin-bottom: 25px;
 }
 
-.customize .content{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background: rgba(0,0,0,0.5);
-}
-
-.customize .inner_content{
-	max-width: 900px;
+.inner_content{
+	max-width: 600px;
 	width: 100%;
 }
 
-.customize .content h2{
-	font-size: 40px;
-	color: #fff;
+.inner_content p{
+	padding-bottom: 20px;
 }
 
-.customize .content p{
-	font-size: 18px;
-	line-height: 1.5;
-	color: #fff;
-	margin-bottom: 15px;
-}
+/*User Section Starts*/
 
-.customize .content .container{
+.mainbox{
 	height: 100%;
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
+	text-align: center;
+}
+
+.download_section .container{
+	height: 600px;
+}
+
+.mainbox i{
+	font-size: 42px;
+	color: #5924EC;
+	margin-bottom: 20px;
+}
+
+.box p{
+	font-size: 34px;
+	margin-bottom: 20px;
+}
+
+/*Pricing Section Starts*/
+
+.pricing_section{
+	background-color: lightgray;
+	padding: 70px 0;
+}
+.pricing_plan .pricing_content{
+	max-width: 600px;
+	width: 100%;
 	margin: 0 auto;
 }
 
-#script{
-	font-size: 25px;
-	line-height: 1.5;
+.pricing_plan .pricing_content h2{
+	font-size: 28px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	line-height: 1.4;
+}
+
+.pricing_plan .pricing_content p{
+	margin-bottom: 50px;
+}
+
+.box_sections{
+	display: flex;
+	justify-content: space-between;
+}
+
+.box_sections .box_lists{
+	width: 32%;
+	padding: 20px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.box_sections .box_lists .border_boxes i{
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.box_sections .box_lists .border_boxes h2{
+	font-size: 28px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	line-height: 1.4;
+}
+
+.check{
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.price{
+	font-size: 28px;
+}	
+
+.selectprice{
+	cursor: pointer;
+	font-size: 18px;
+	max-width: 120px;
+	width: 100%;
+	background-color: #0b545c;
 	color: #fff;
-	margin-bottom: 25px;
+	border: none;
+	padding: 10px;
 }
