@@ -1,0 +1,93 @@
+/*iPad Pro*/
+@media only screen and (min-width: 1024px) and (max-width: 1239px){
+	.download_section .container .box p{
+		font-size: 24px;
+	}
+}
+
+/*iPad*/
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+	.header .nav{
+	max-width: 500px;
+	}
+
+	.header .nav ul li a{
+		font-size: 18px;
+	}
+
+	.banner_section .inner_content{
+		max-width: 500px;
+	}
+
+	.banner_section .content h1{
+		font-size: 40px;
+	}
+
+	.box_section .box_list h3{
+		font-size: 18px;
+	}
+
+
+	.box_section .box_list p{
+		font-size: 16px;
+	}
+
+	.download_section .container .box p{
+		font-size: 20px;
+	}
+
+	.box_sections .box_lists{
+		width: 45%;
+	}
+}
+
+/*Mobile*/
+@media only screen and (max-width: 767px){
+	.banner_section{
+		height: 100vh;
+	}
+	.banner_section .banner_img{
+		height: 100%;
+	}
+
+	.banner_section .banner_img img{
+		height: 100%;
+		object-fit: cover;
+	}
+	.box_section{
+		flex-wrap: wrap;
+	}
+	.box_section .box_list{
+		width: 100%;
+	}
+
+	.download_section .box{
+		max-width: 50%;
+		word-break: break-word;
+		margin-bottom: 20px;
+	}
+
+	.download_section .container{
+		flex-wrap: wrap;
+	}
+
+	.download_section .container .box p{
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+
+	.box_sections .box_lists{
+		width: 100%;
+	}
+
+	.box_sections{
+		flex-wrap: wrap;
+	}
+
+	.design .container .catalogue {
+		flex-wrap: wrap;
+	}
+	.design .catalogue img{
+		width: 100%;
+	}
+}
