@@ -12,14 +12,15 @@ button:hover{	color: #000;	background: #fff;}
 
 .BgColour{	background-color: white;	border-bottom: 1px solid lightgray;	transition: all 1s;}
 
-.header_section.BgColour .nav ul li a{
+.header_section.BgColour .navs ul li a{
 	color: black;
 }
-
 .header_section.BgColour .logo a{
 	color: black;
 }
-
+.header_section.BgColour .mobile-navbar-btn{
+	background: black;
+}
 .container{
 	max-width: 1440px;
 	width: 100%;
@@ -53,28 +54,28 @@ button:hover{	color: #000;	background: #fff;}
 	color: #0b545c;
 }
 
-.header .nav{
+.header .navs{
 	max-width: 600px;
 	width: 100%;
 }
-.header .nav ul{
+.header .navs ul{
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
 	letter-spacing: 1px;
 }
 
-.header .nav ul li a{
+.header .navs ul li a{
 	text-decoration: none;
 	text-transform: capitalize;
 	color: white;
 	font-size: 20px;
 }
-.header .nav ul li a:hover{
+.header .navs ul li a:hover{
 	color: #0b545c;
 }
 
-.hamburger{
+/*.hamburger{
 	width: 30px;
 	height: 30px;
 	position: relative;
@@ -90,8 +91,8 @@ button:hover{	color: #000;	background: #fff;}
 	top: 6px;
 	left: 0;
 	border-radius: 3px;
-	/*transform: translate(0,0);
-	transition: 0.3s ease-in-out;*/
+	transform: translate(0,0);
+	transition: 0.3s ease-in-out;
 }
 
 .hamburger:after{
@@ -103,8 +104,8 @@ button:hover{	color: #000;	background: #fff;}
 	bottom: 6px;
 	left: 0;
 	border-radius: 3px;
-	/*transform: translate(0,0);
-	transition: 0.3s ease-in-out;*/
+	transform: translate(0,0);
+	transition: 0.3s ease-in-out;
 }
 
 .hamburger.active:before{
@@ -113,7 +114,23 @@ button:hover{	color: #000;	background: #fff;}
 
 .hamburger.active:after{
 	transform: translate(0,-9px) rotate(-44deg);
+}*/
+
+.mobile-navbar-btn{
+  display: none;
+  cursor: pointer;
 }
+
+.mobile-nav-icon{
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+.mobile-nav-icon[name="close-outline"]{
+  display: none;
+}
+
 /*header ends*/
 
 .banner_section{
