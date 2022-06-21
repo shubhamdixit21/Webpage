@@ -10,7 +10,7 @@ function scrollValue(){
 
 window.addEventListener('scroll',scrollValue);
 
-const mobile_nav = document.querySelector(".mobile-navbar-btn");
+const mobile_nav = document.querySelector(".hamburger");
 const nav_header = document.querySelector(".header");
 
 const toggleNavbar = () => {

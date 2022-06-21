@@ -8,7 +8,7 @@ h2{font-size: 28px;	font-weight: 600;	margin-bottom: 10px;	line-height: 1.4;}
 
 button{	cursor: pointer;	font-size: 18px;	max-width: 120px;	width: 100%;	background-color: #0b545c;	color: #fff;border: none;padding: 10px;}
 
-button:hover{	color: #000;	background: #fff;}
+button:hover{	color: #0b545c;	background: #fff;}
 
 .BgColour{	background-color: white;	border-bottom: 1px solid lightgray;	transition: all 1s;}
 
@@ -51,7 +51,7 @@ button:hover{	color: #000;	background: #fff;}
 	color:  #fff;
 }
 .header .logo a:hover{
-	color: #0b545c;
+	color: #ffa1c6;
 }
 
 .header .navs{
@@ -72,10 +72,10 @@ button:hover{	color: #000;	background: #fff;}
 	font-size: 20px;
 }
 .header .navs ul li a:hover{
-	color: #0b545c;
+	color: #ffa1c6;
 }
 
-/*.hamburger{
+.hamburger{
 	width: 30px;
 	height: 30px;
 	position: relative;
@@ -86,7 +86,7 @@ button:hover{	color: #000;	background: #fff;}
 	content: "";
 	width: 100%;
 	height: 3px;
-	background: #fff;
+	background: rgb(136 132 132);
 	position: absolute;
 	top: 6px;
 	left: 0;
@@ -99,7 +99,7 @@ button:hover{	color: #000;	background: #fff;}
 	content: "";
 	width: 100%;	
 	height: 3px;
-	background: #fff;
+	background: rgb(136 132 132);
 	position: absolute;
 	bottom: 6px;
 	left: 0;
@@ -108,27 +108,12 @@ button:hover{	color: #000;	background: #fff;}
 	transition: 0.3s ease-in-out;
 }
 
-.hamburger.active:before{
+.active .hamburger:before{
 	transform: translate(0,7px) rotate(43deg);
 }
 
-.hamburger.active:after{
+.active .hamburger:after{
 	transform: translate(0,-9px) rotate(-44deg);
-}*/
-
-.mobile-navbar-btn{
-  display: none;
-  cursor: pointer;
-}
-
-.mobile-nav-icon{
-  width: 30px;
-  height: 30px;
-  color: white;
-}
-
-.mobile-nav-icon[name="close-outline"]{
-  display: none;
 }
 
 /*header ends*/
@@ -440,7 +425,7 @@ button:hover{	color: #000;	background: #fff;}
 }
 
 .social_section .img_box{
-	max-width: 24%;
+	max-width: 20%;
 	width: 100%;
 }
 
@@ -472,16 +457,15 @@ button:hover{	color: #000;	background: #fff;}
 
 .trial_section .email{
 	border: none;
+	width: 250px;
 }
 
-.trial_section .submit_button{
-	cursor: pointer;	
-	max-width: 120px;	
-	width: 100%;	
-	background-color: #0b545c;	
-	color: #fff;
-	border: none;
+.trial_section .trial_test{
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 /*Footer Section Starts*/
 footer{
 	padding: 60px 0;
@@ -502,6 +486,7 @@ footer .footer_section ul{
  	list-style: none;
  	justify-content: space-between;
  	padding-top: 40px;
+ 	padding-bottom: 20px;
  }
 
 .footer_logo{
@@ -519,4 +504,8 @@ footer .footer_section ul{
 	position: relative;
 	top: 11px;
 	left: 1px;
+}
+
+footer .footer_section ul li a:hover{
+	color: #ffa1c6;
 }
