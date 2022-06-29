@@ -51,7 +51,7 @@ button:hover{	color: #0b545c;	background: #fff;}
 	color:  #fff;
 }
 .header .logo a:hover{
-	color: #ffa1c6;
+	color: #033e45;
 }
 
 .header .navs{
@@ -72,7 +72,7 @@ button:hover{	color: #0b545c;	background: #fff;}
 	font-size: 20px;
 }
 .header .navs ul li a:hover{
-	color: #ffa1c6;
+	color: #033e45;
 }
 
 .hamburger{
